@@ -1,8 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import ComponentA from "../components/ComponentA";
 import SortedList from "../components/SortedList";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const data = [
@@ -25,7 +22,6 @@ const Home: NextPage = () => {
   ];
   return (
     <div>
-      <ComponentA value={5} />
       <SortedList
         items={data}
         renderItem={(item, index) => {
