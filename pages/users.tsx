@@ -1,10 +1,6 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import ComponentA from "../components/ComponentA";
 import SortedList from "../components/SortedList";
-import styles from "../styles/Home.module.css";
 
-const Home: NextPage = () => {
+const users = () => {
   const data = [
     {
       name: "John",
@@ -25,7 +21,6 @@ const Home: NextPage = () => {
   ];
   return (
     <div>
-      <ComponentA value={5} />
       <SortedList
         items={data}
         renderItem={(item, index) => {
@@ -41,5 +36,4 @@ const Home: NextPage = () => {
     </div>
   );
 };
-
-export default Home;
+export default users;
